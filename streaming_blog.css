@@ -1,0 +1,63 @@
+body {
+    font-family: 'Big Shoulders Text', cursive;
+    color: rgb(197, 197, 197);
+   /* background-color: rgb(41, 41, 41); */
+    background-image: url("dark_geometric.png");
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+header {
+    text-align: center;
+    font-size: 1.3em;
+}
+header, h2 {
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.images {  /* ce sont des h3 */
+    display: flex;
+    justify-content: space-between;
+}
+
+.images h3 .text_radient {
+    display: flex;
+    align-items: flex-end;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 26px;
+}
+
+.text_radient {
+    background: linear-gradient(transparent, black);
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.articles_et_asides {
+    display: flex;
+}
+   
+.nos_avis {
+    padding-right: 50 px;
+}
+
+.serie1 { 
+    width: 350px;
+    height: 350px;
+    background: blue;
+}
+
+.serie2 {
+    width: 300px;
+    height: 300px;
+    background: green;
+}
+
+.serie3 {
+    width: 250px;
+    height: 250px;
+    background: red;
+}
+
