@@ -3,21 +3,70 @@ body {
     color: rgb(197, 197, 197);
    /* background-color: rgb(41, 41, 41); */
     background-image: url("dark_geometric.png");
-    padding-left: 15%;
-    padding-right: 15%;
+    font-size: 1.1em;
+    margin: 0;
 }
 
 header {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    font-size: 1.3em;
+    width: 100%;
+    background-color: rgb(104, 0, 0);
+    position: relative;
+    z-index: 2;
 }
 header, h2 {
     font-family: 'Bowlby One SC', cursive;
 }
 
+header h1 {
+    font-size: 2.2em;
+}
+
+header h2 {
+    padding-left: 10px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    list-style: none;
+    position: relative;
+    z-index: 1;
+    bottom: 50px;
+    padding: 0;
+}
+
+.N {
+    font-size: 1.1em;
+    background-color: #3d3d3d;
+    color: #ffffff;
+    padding: 50px 30px 10px 30px;
+    margin: 0px 20px 0px 20px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.N:hover {
+    transform: translate(0px, 30px);
+    transition: 0.3s;
+}    
+
+.zonecentree {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 .images {  /* ce sont des h3 */
     display: flex;
     justify-content: space-between;
+    padding-right: 15%;
 }
 
 .images h3 .text_radient {
@@ -29,7 +78,7 @@ header, h2 {
 }
 
 .text_radient {
-    background: linear-gradient(transparent, black);
+    background: linear-gradient(transparent 40%, black);
     height: 100%;
     width: 100%;
     box-sizing: border-box;
@@ -40,24 +89,97 @@ header, h2 {
 }
    
 .nos_avis {
-    padding-right: 50 px;
+    padding-right: 50px;
+}
+
+h3 {
+    font-size:
+    1.4em;
 }
 
 .serie1 { 
     width: 350px;
     height: 350px;
     background: blue;
+    background-image: url("bestmen2.jpg");
+    transition: 0.5s;
 }
 
 .serie2 {
     width: 300px;
     height: 300px;
     background: green;
+    background-image: url("tamago.jpg");
+    transition: 0.5s;
 }
 
 .serie3 {
     width: 250px;
     height: 250px;
     background: red;
+    background-image: url("jeanne.jpg");
+    transition: 0.5s;
 }
 
+.serie1:hover {
+    transform: scale(1.1); /* 110% zoom */
+    transition: 0.5s;
+}
+
+.serie2:hover {
+    transform: scale(1.1); /* 110% zoom */
+    transition: 0.5s;
+}
+
+.serie3:hover {
+    transform: scale(1.1); /* 110% zoom */
+    transition: 0.5s;
+}
+
+.avis {
+    border: 2px;
+    border-style: solid;
+    border-color: #3d3d3d;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.first_aside {
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: #3d3d3d;
+    margin: 10px;
+    padding: 10px;
+}
+
+.second_aside {
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: #3d3d3d;
+    margin: 10px;
+    padding: 10px;
+}
+
+.ul_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    border: 2px;
+    border-style: solid;
+    border-color: #3d3d3d;
+    margin: 10px;
+    padding: 10px;
+}
+
+.footer_link {
+    width: 100px;
+    text-align: center;
+    background-color: #3d3d3d;
+    color: #ffffff;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    border-radius: 4px;
+}

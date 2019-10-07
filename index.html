@@ -14,99 +14,114 @@
         <header>
 
             <h1 class="streaming">Streaming Blog</h1>
-            <p class="last">Last series in prime </p>
+            <h2>Last series in prime </h2>
             
         </header>
 
-        <nav></nav>
+        <div class="zonecentree"> <!-- Aura un padding de 15% -->
 
-        <section> <!--prend toute la largeur-->
+            <nav>
+                <ul class="menu">
+                <a href="?"><li class="N">Accueil</li></a>
+                <a href="?"><li class="N">Séries par thème</li></a>
+                <a href="?"><li class="N">Lien morts</li></a>
+                </ul>        
+            </nav>
 
-            <h2>Dernières sorties</h2>
+            <section> <!--prend toute la largeur-->
+
+                <h2>Dernières sorties</h2>
+                
+                <article class="images">
+
+                    <h3 class="serie1"><div class="text_radient">The Best Men S1</div></h3>
+                    <h3 class="serie2"><div class="text_radient">Tamago no Musume EP 22</div></h3>
+                    <h3 class="serie3"><div class="text_radient">Jeanne d'Arc</div></h3>
+
+                </article>  
+
+            </section>
+
+            <section class="articles_et_asides"> <!-- Début de la zone flexbox -->
             
-            <article class="images">
+                <article class="nos_avis">
 
-                <h3 class="serie1"><div class="text_radient">serie1</div></h3>
-                <h3 class="serie2"><div class="text_radient">serie2</div></h3>
-                <h3 class="serie3"><div class="text_radient">serie3</div></h3>
+                    <h2>Nos avis</h2>
 
-            </article>  
+                        <div class="avis">
+                            <h3>The Best Men S1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br/> <br/>
 
-        </section>
+                            <strong>Les +</strong> Excepteur sint occaecat, cupidatat non proident <br/>
+                            <strong>Les -</strong> sunt in culpa qui officia deserunt mollit...</p>
+                        </div>
 
-        <section class="articles_et_asides"> <!-- Début de la zone flexbox -->
+                        <div class="avis">
+                            <h3>Tamago no Musume EP 22</h3>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ! <br/> <br/>
+
+                            <strong>Les +</strong> Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae <br/>
+                            <strong>Les -</strong> Vitae dicta sunt explicabo. </p>
+                        </div>
+
+                        <div class="avis">
+                            <h3>Jeanne d'Arc</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo... <br/> <br/>
+
+                            <strong>Les +</strong> Nemo enim ipsam voluptatem quia voluptas. <br/>
+                            <strong>Les -</strong> Aspernatur aut odit aut fugit...</p>
+                        </div>
+
+                </article>
+
+                <article> <!-- Contient les asides-->
+
+                    <aside class="first_aside">
+
+                        <h2> Réalisateur du mois </h2>
+
+                        <figure>
+                            <img src="director.jpg" height="225px" class="director" alt="Takeshi Nobuhiro" title="Takeshi Nobuhiro"/>
+                            <figcaption>
+                                Takeshi Nobuhiro <br/>
+                                Né le 12/09/1977 à Nagano
+                            </figcaption>
+                        </figure>    
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                    </aside>
+                
+                    <aside class="second_aside">
+
+                        <h2> Acteur/rice du mois </h2>
+                        
+                        <figure>
+                            <img src="actress2.jpg" height="225px" alt="Linnie D. Terrell" title="Linnie D. Terrell"/>
+                            <figcaption>
+                                Linnie D. Terrell <br/>
+                                Née le 24/10/1992 à Chicago
+                            </figcaption>
+                        </figure>  
+
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+
+                    </aside>
+
+                </article> <!-- Fin des asides-->
+
+            </section> <!-- Fin de la zone flexbox -->
         
-            <article class="nos_avis">
-
-                <h2>Nos avis</h2>
-
-                <h3>serie1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br/>
-
-                <div>Les +</div> Excepteur sint occaecat, cupidatat non proident
-                <div>Les -</div> sunt in culpa qui officia deserunt mollit...</p>
-
-                <h3>serie2</h3>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ! <br/>
-
-                <div>Les +</div> Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-                <div>Les -</div> Vitae dicta sunt explicabo. </p>
-
-                <h3>serie3</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo... <br/>
-
-                <div>Les +</div> Nemo enim ipsam voluptatem quia voluptas.
-                <div>Les -</div> Aspernatur aut odit aut fugit...</p>
-
-            </article>
-
-            <article> <!-- Contient les asides-->
-
-                <aside>
-
-                    <h2> Réalisateur du mois </h2>
-
-                    <figure>
-                        <img src="director.jpg" height="225px" class="director" alt="Takeshi Nobuhiro" title="Takeshi Nobuhiro"/>
-                        <figcaption>
-                            Takeshi Nobuhiro <br/>
-                            Né le 12/09/1977 à Nagano
-                        </figcaption>
-                    </figure>    
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                </aside>
-            
-                <aside>
-
-                    <h2> Acteur/rice du mois </h2>
-                    
-                    <figure>
-                        <img src="actress2.jpg" height="225px" alt="Linnie D. Terrell" title="Linnie D. Terrell"/>
-                        <figcaption>
-                            Linnie D. Terrell <br/>
-                            Née le 24/10/1992 à Chicago
-                        </figcaption>
-                    </figure>  
-
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-
-                </aside>
-
-            </article> <!-- Fin des asides-->
-
-        </section> <!-- Fin de la zone flexbox -->
-        
+        </div> <!-- Fin de zone centrée -->
 
         <footer>
 
-                <ul>
-                        <li>Home</li>
-                        <li>A propos</li>
-                        <li>Contact</li>
-                        <li>Standards</li>
-                        <li>Nous rejoindre</li>
+                <ul class="ul_footer">
+                    
+                    <li class="footer_link">A propos</li>
+                    <li class="footer_link">Contact</li>
+                    <li class="footer_link">Standards</li>
+                    <li class="footer_link">Nous rejoindre</li>
                 </ul>
 
         </footer>
