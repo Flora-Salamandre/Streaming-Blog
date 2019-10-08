@@ -13,15 +13,19 @@
 
         <header>
 
-            <h1 class="streaming">Streaming Blog</h1>
-            <h2>Last series in prime </h2>
-            
+            <div class= "titres">
+                <h1 class="streaming">Streaming Blog</h1>
+                <h2>Last series in prime </h2>
+            </div>
+
+            <input type="text" class="rechercher" size="25" placeholder="Rechercher une série...">
+
         </header>
 
         <div class="zonecentree"> <!-- Aura un padding de 15% -->
 
-            <nav>
-                <ul class="menu">
+            <nav class="nav">
+                <ul class="ul_menu">
                 <a href="?"><li class="N">Accueil</li></a>
                 <a href="?"><li class="N">Séries par thème</li></a>
                 <a href="?"><li class="N">Lien morts</li></a>
@@ -34,9 +38,9 @@
                 
                 <article class="images">
 
-                    <h3 class="serie1"><div class="text_radient">The Best Men S1</div></h3>
-                    <h3 class="serie2"><div class="text_radient">Tamago no Musume EP 22</div></h3>
-                    <h3 class="serie3"><div class="text_radient">Jeanne d'Arc</div></h3>
+                    <a href="#bestmen"><h3 class="serie1"><div class="text_radient">The Best Men S1</div></h3></a>
+                    <a href="#tamago"><h3 class="serie2"><div class="text_radient">Tamago no Musume EP 22</div></h3></a>
+                    <a href="#jeanne"><h3 class="serie3"><div class="text_radient">Jeanne d'Arc</div></h3></a>
 
                 </article>  
 
@@ -49,27 +53,32 @@
                     <h2>Nos avis</h2>
 
                         <div class="avis">
-                            <h3>The Best Men S1</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br/> <br/>
+                            <h3 id="bestmen">The Best Men S1</h3>
+                            <p>Réal.: Steve Shepard. 2019. <br/>
+                            Copains comme cochons depuis l'adolescence, 3 jeunes hommes ont juré qu'ils ne laisseraient aucune fille avoir raison de leur amitié, au grand dam de leurs petites amies... Jusqu'au jour où le plus jeune annonce qu'il va se marier. Ses deux amis décident alors de se charger sa <em>bachelor party</em> avec le but de le convaincre de changer d'avis ! Mais c'est sans compter sur Arlene, la fiancée, accompagnée de sa <em>bestie</em> Thea, qui n'a pas dit son dernier mot...<br/><br/>
+                            Une comédie trash et déjantée dans l'univers des <em>devil brides</em> où célibataires et dem-dho' s'affrontent pour le meilleur et pour le pire ! <br/><br/>
 
-                            <strong>Les +</strong> Excepteur sint occaecat, cupidatat non proident <br/>
-                            <strong>Les -</strong> sunt in culpa qui officia deserunt mollit...</p>
+                            <strong>Les +</strong> La bonne surprise de la rentrée tient ses promesses, avec la révélation de la brillante Linnie Terrell ! <br/>
+                            <strong>Les -</strong> Beaucoup de personnages et certaines intrigues secondaires un peu bâclées...</p>
                         </div>
 
                         <div class="avis">
-                            <h3>Tamago no Musume EP 22</h3>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ! <br/> <br/>
+                            <h3 id="tamago">Tamago no Musume EP 22</h3>
+                            <p>Réal.: Takeshi Nobuhiro. Première diffusion: 1985. <br/>
+                            L'année scolaire touche à sa fin et Natsuo n'a toujours pas découvert à qui d'Akiko ou de Haruka appartient le collier. Le jeune homme se rend compte que ses sentiments ne dépendent peut-être pas de son souvenir... Akiko se prépare à ses examens d'entrée à l'université et c'est la dernière chance pour le jeune homme de lui révéler son secret.<br/><br/>
+                            <em>Synopsis: Alors qu'il était au collège, Natsuo a été sauvé d'une bande voyous par une mystérieuse fille aussi courageuse que douce. Elle n'a laissé derrière elle qu'un étrange pendentif en forme d'oeuf... A son entrée au lycée, Natsuo se retrouve dans la même classe qu'une étrange jeune fille au caractère bien trempé et au style excentrique.</em> <br/><br/>
 
-                            <strong>Les +</strong> Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae <br/>
-                            <strong>Les -</strong> Vitae dicta sunt explicabo. </p>
+                            <strong>Les +</strong> On revoit avec autant de plaisir cette comédie lycéenne dont on sent le dénouement approcher ! <br/>
+                            <strong>Les -</strong> Un épisode un peu <em>filler</em> qui ne fait pas trop avancer l'intrigue entre Natsuo et les filles. </p>
                         </div>
 
                         <div class="avis">
-                            <h3>Jeanne d'Arc</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo... <br/> <br/>
+                            <h3 id="jeanne">Jeanne d'Arc</h3>
+                            <p>Film franco-tchèque. Réal.: Luc Besson. 1999.
+                            Évocation de la vie de Jeanne d'Arc à travers trois époques allant de son enfance à son procès, en passant par les nombreuses batailles qui ont ponctué sa vie. L'histoire commence alors que la petite Jeanne assiste au pillage et à la destruction de son village par un détachement de soldats anglais. <br/><br/>
 
-                            <strong>Les +</strong> Nemo enim ipsam voluptatem quia voluptas. <br/>
-                            <strong>Les -</strong> Aspernatur aut odit aut fugit...</p>
+                            <strong>Les +</strong> Une fresque historique frappante, savamment relatée par Besson à juste titre doublement césarisé, avec une photographie de la campagne Lorraine magnifique. <br/>
+                            <strong>Les -</strong> Une actrice principale qui manque de charisme et de talent, qui joue davantage qu'elle interprète... Dommage!</p>
                         </div>
 
                 </article>

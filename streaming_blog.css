@@ -7,31 +7,57 @@ body {
     margin: 0;
 }
 
+a {
+    color: rgb(197, 197, 197);
+    text-decoration: none;
+}
+
 header {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    background: url("cruise3.png") no-repeat left top, url("iruku.png") no-repeat right top;
+    height: 160px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     background-color: rgb(104, 0, 0);
     position: relative;
     z-index: 2;
 }
+
+.titres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rechercher {
+    font-family: 'Big Shoulders Text', cursive;
+    width: 150px;
+    margin-top: 10px;
+}
+
 header, h2 {
     font-family: 'Bowlby One SC', cursive;
 }
 
 header h1 {
     font-size: 2.2em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 header h2 {
     padding-left: 10px;
+    margin-top: 0;
     font-size: 1em;
-    display: flex;
-    align-items: center;
 }
 
-.menu {
+.nav {
+    height: 70px;
+}
+
+.ul_menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -47,7 +73,7 @@ header h2 {
     font-size: 1.1em;
     background-color: #3d3d3d;
     color: #ffffff;
-    padding: 50px 30px 10px 30px;
+    padding: 40px 30px 10px 30px;
     margin: 0px 20px 0px 20px;
     border-radius: 4px;
     z-index: 1;
@@ -63,13 +89,26 @@ header h2 {
     padding-right: 10%;
 }
 
+.articles_et_asides {
+    display: flex;
+}
+   
+.nos_avis {
+    padding-right: 50px;
+}
+
+h3 {
+    font-size:
+    1.4em;
+}
+
 .images {  /* ce sont des h3 */
     display: flex;
     justify-content: space-between;
     padding-right: 15%;
 }
 
-.images h3 .text_radient {
+.text_radient {
     display: flex;
     align-items: flex-end;
     padding: 5px;
@@ -82,19 +121,6 @@ header h2 {
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-}
-
-.articles_et_asides {
-    display: flex;
-}
-   
-.nos_avis {
-    padding-right: 50px;
-}
-
-h3 {
-    font-size:
-    1.4em;
 }
 
 .serie1 { 
