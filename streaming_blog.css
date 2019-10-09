@@ -163,27 +163,25 @@ h3 {
 }
 
 .avis {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.les_asides {
     border: 2px;
     border-style: solid;
     border-color: #3d3d3d;
-    margin-bottom: 10px;
-    padding: 10px;
+    margin: 10px;
 }
 
 .first_aside {
     text-align: center;
-    border: 2px;
-    border-style: solid;
-    border-color: #3d3d3d;
     margin: 10px;
     padding: 10px;
 }
 
 .second_aside {
     text-align: center;
-    border: 2px;
-    border-style: solid;
-    border-color: #3d3d3d;
     margin: 10px;
     padding: 10px;
 }
@@ -193,10 +191,8 @@ h3 {
     flex-direction: column;
     align-items: center;
     list-style: none;
-    border: 2px;
-    border-style: solid;
-    border-color: #3d3d3d;
-    margin: 10px;
+    background-color: #11111170;
+    margin: 0px;
     padding: 10px;
 }
 
